@@ -55,6 +55,7 @@ curl http://localhost:8080/api/users
 
 
 # 🏗️ Architecture Overview
+```
 ┌─────────────────────┐     ┌──────────────────┐     ┌──────────────────────┐
 │   REST Controllers  │────▶│   H2 Database    │────▶│  GenericApiService   │
 │  /init-config       │     │  api_configs     │     │  • Bearer Auth       │
@@ -66,6 +67,7 @@ curl http://localhost:8080/api/users
                                                        │   tempUsers List    │
                                                        │ CopyOnWriteArrayList│
                                                        └─────────────────────┘
+```
 
 # 🔍 H2 Database Console
 ```
