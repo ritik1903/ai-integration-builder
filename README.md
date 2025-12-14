@@ -18,7 +18,8 @@ git clone https://github.com/ritik1903/ai-integration-builder.git
 cd ai-integration-builder
 mvn clean spring-boot:run
 
-2. Test LIVE Demo (New Terminal)
+### **2. Test LIVE Demo** *(New Terminal)*
+```bash
 # Initialize config
 curl -X POST http://localhost:8080/api/init-config
 
@@ -30,6 +31,7 @@ curl -X POST http://localhost:8080/api/fetch-users/calendly_users
 
 # View stored users
 curl http://localhost:8080/api/users
+```
 
 **Expected Output:**
 ```
