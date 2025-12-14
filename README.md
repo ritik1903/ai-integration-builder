@@ -13,10 +13,12 @@ Pulls users from Calendly, Dropbox, Slack etc. without code changes or redeploym
 
 
 # 🚀 Quick Start (2 Minutes)
-1. Clone & Run
+### **1. Clone & Run** 
+```bash
 git clone https://github.com/ritik1903/ai-integration-builder.git
 cd ai-integration-builder
 mvn clean spring-boot:run
+```
 
 ### **2. Test LIVE Demo** *(New Terminal)*
 ```bash
