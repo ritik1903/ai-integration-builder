@@ -68,13 +68,16 @@ curl http://localhost:8080/api/users
                                                        └─────────────────────┘
 
 # 🔍 H2 Database Console
+```
 🌐 URL: http://localhost:8080/h2-console
 📊 JDBC: jdbc:h2:mem:testdb
 👤 User: sa
 🔑 Password: (leave empty)
+```
 
 
 # Table Schema:
+```
 api_configs (
   id IDENTITY PRIMARY KEY,
   name VARCHAR(100),
@@ -84,9 +87,11 @@ api_configs (
   auth_token VARCHAR(2000),  -- JWT tokens
   response_mapping TEXT
 )
+```
 
 
 # 🎓 Demo Script
+```
 echo "=== 1. DYNAMIC CONFIGURATION ==="
 curl -X POST http://localhost:8080/api/init-config
 → "✅ Config 'calendly_users' created successfully!"
@@ -102,7 +107,7 @@ curl -X POST http://localhost:8080/api/fetch-users/calendly_users
 echo "=== 4. TEMPORARY STORAGE ==="
 curl http://localhost:8080/api/users
 → [] (tempUsers list working)
-
+```
 
 # ✅ Requirements Checklist
  Multiple external systems - Dynamic api_configs table (Calendly/Dropbox ready)
@@ -119,16 +124,18 @@ curl http://localhost:8080/api/users
 
 
 # 🛠️ Tech Stack
+```
 🔥 Spring Boot 3.x
 📊 Spring Data JPA
 🗄️  H2 In-Memory Database
 🌐 RestTemplate (HTTP Client)
 📄 Jackson (JSON Processing)
 🧵 Concurrent Collections
-
+```
 
 # 🚀 Extensibility (Add Dropbox/Slack)
 Just 1 DB Row:
+```
 INSERT INTO api_configs VALUES (
   'dropbox_users',
   'https://api.dropboxapi.com/2',
@@ -138,3 +145,4 @@ INSERT INTO api_configs VALUES (
   '{"users": "members[*]"}'
 );
 curl -X POST http://localhost:8080/api/fetch-users/dropbox_users
+```
