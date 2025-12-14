@@ -61,7 +61,7 @@ curl http://localhost:8080/api/users
 │  /init-config       │     │  api_configs     │     │  • Bearer Auth       │
 │  /fetch-users       │     │  • URLs/Tokens   │     │  • RestTemplate      │
 └─────────────────────┘     └──────────────────┘     │  • JSON Parsing      │
-                                                      └──────────────────────┘
+                                                     └──────────────────────┘
                                                                      │
                                                        ┌─────────────────────┐
                                                        │   tempUsers List    │
