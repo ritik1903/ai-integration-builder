@@ -127,12 +127,12 @@ curl http://localhost:8080/api/users
 
 # 🛠️ Tech Stack
 ```
-🔥 Spring Boot 3.x
-📊 Spring Data JPA
+🔥 Spring Boot 3.2.0
+📊 Spring Data JPA 3.2.0
 🗄️  H2 In-Memory Database
-🌐 RestTemplate (HTTP Client)
-📄 Jackson (JSON Processing)
-🧵 Concurrent Collections
+🌐 RestTemplate (HTTP Client) 6.1.5
+📄 Jackson (JSON Processing) 2.15.3
+🧵 Java 21 (Concurrent Collections)
 ```
 
 # 🚀 Extensibility (Add Dropbox/Slack)
