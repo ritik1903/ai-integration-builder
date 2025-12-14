@@ -31,11 +31,13 @@ curl -X POST http://localhost:8080/api/fetch-users/calendly_users
 # View stored users
 curl http://localhost:8080/api/users
 
-# Expected Output:
+**Expected Output:**
+```
 ✅ Config 'calendly_users' created successfully!
 ✅ Database OK! Configs count: 1
-[]  # Graceful error handling
-[]
+[]  # Graceful error handling (401→empty list)
+[]  # Temporary storage working
+```
 
 # 📋 API Endpoints
 | Endpoint                                        | Method | Description                 | Response                 |
